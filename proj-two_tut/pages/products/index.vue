@@ -16,6 +16,17 @@
 
     // fetch the products
     const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+    // alter meta-data
+    useHead({
+        title: 'Buy Clothes | Store',
+        meta: [
+            {
+                name: 'description',
+                content: 'buy your clothes',
+            }
+        ]
+    })
 </script>
 
 <style scoped>

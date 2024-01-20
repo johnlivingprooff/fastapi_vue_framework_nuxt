@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <Title>{{ product.title }} | Buy Stuff</Title>
+        <Meta name="description" :content="product.description" />
+    </Head>
     <div>
         <product-details :product="product"/>
     </div>

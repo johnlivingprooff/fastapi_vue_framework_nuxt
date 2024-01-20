@@ -4,4 +4,21 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss'
   ],
+  app: {
+    head: {
+      title: 'Clothes Shop',
+      meta: [
+        {
+          name: 'description',
+          content: 'Your favourite clothes shop'
+        }
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+        }
+      ]
+    }
+  }
 })
